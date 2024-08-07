@@ -1,0 +1,5 @@
+# This file was automatically generated
+name: bls
+type: motherduck
+options:
+  database: bls
