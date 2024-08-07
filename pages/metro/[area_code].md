@@ -36,6 +36,8 @@ limit 10
     y=value
     swapXY
     yFmt=num0
+    emptySet=pass
+    emptyMessage="No occupations found"
 />
 
 ## Best Paying Occupations
@@ -64,6 +66,8 @@ limit 10
     y=value
     swapXY
     yFmt=usd0k
+    emptySet=pass 
+    emptyMessage="No occupations found"
 />
 
 
