@@ -1,5 +1,6 @@
 ---
 title: BLS Salary Explorer
+img: https://bls.evidence.app/bls.png
 ---
 
 This app explores the Bureau of Labor Statistics (BLS) data on salaries from the [Occupational Employment and Wage Statistics (OEWS) survey](https://www.bls.gov/oes/). 
