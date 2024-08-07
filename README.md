@@ -1,4 +1,6 @@
-# Evidence Template Project
+# BLS Salary Explorer
+
+This app explores the Bureau of Labor Statistics (BLS) data on salaries from the [Occupational Employment and Wage Statistics (OEWS) survey](https://www.bls.gov/oes/).
 
 ## Using Codespaces
 
