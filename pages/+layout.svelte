@@ -5,6 +5,6 @@
 	export let data;
 </script>
 
-<EvidenceDefaultLayout {data} githubRepo=https://github.com/archiewood/bls>
+<EvidenceDefaultLayout {data} githubRepo=https://github.com/archiewood/bls logo=/bls.png>
 	<slot slot="content" />
 </EvidenceDefaultLayout>
