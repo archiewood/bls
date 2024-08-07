@@ -1,5 +1,5 @@
 select 
-    trim(series_id) as series_id,
+    trim(s.series_id) as series_id,
     --seasonal,
     areatype_code,
     industry_code,
@@ -9,9 +9,13 @@ select
     area_code,
     sector_code,
     series_title,
+    try_cast(value as double) as value,
     --footnote_codes,
     --begin_year,
     --begin_period,
     --end_year,
     --end_period
-from series
+from series s
+left join alldata a 
+on trim(s.series_id) = trim(a.series_id)
+${qa_filter}

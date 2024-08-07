@@ -17,8 +17,7 @@ select
     value,
     occupation_name,
     datatype_name,
-from bls.all_data
-left join bls.series using (series_id)
+from bls.series
 left join bls.datatype using (datatype_code)
 left join bls.area using (area_code)
 left join bls.occupation using (occupation_code)
@@ -46,8 +45,7 @@ select
     value,
     occupation_name,
     datatype_name,
-from bls.all_data
-left join bls.series using (series_id)
+from bls.series
 left join bls.datatype using (datatype_code)
 left join bls.area using (area_code)
 left join bls.occupation using (occupation_code)

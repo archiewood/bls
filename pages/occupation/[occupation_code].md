@@ -23,8 +23,7 @@ select
     'All US' as area_name,
     datatype_name,
     value,
-from bls.all_data
-left join bls.series using (series_id)
+from bls.series
 left join bls.datatype using (datatype_code)
 where occupation_code = '${params.occupation_code}'
     and areatype_code = 'N'
@@ -54,8 +53,7 @@ select
     'US' || area.state_code as code,
     datatype_name,
     value,
-from bls.all_data
-left join bls.series using (series_id)
+from bls.series
 left join bls.datatype using (datatype_code)
 left join bls.area using (area_code)
 where occupation_code = '${params.occupation_code}'
