@@ -27,7 +27,6 @@ from bls.series
 left join bls.datatype using (datatype_code)
 where occupation_code = '${params.occupation_code}'
     and areatype_code = 'N'
-    and industry_code = '000000'
 order by datatype_code
 ```
 
@@ -59,7 +58,6 @@ left join bls.area using (area_code)
 where occupation_code = '${params.occupation_code}'
     and (datatype_name = '${inputs.metric}')
     and area.areatype_code = 'S'
-    and industry_code = '000000'
     and area_name != 'Alaska'
     and area_name != 'Hawaii'
 ```
@@ -110,7 +108,6 @@ left join bls.datatype using (datatype_code)
 left join bls.area using (area_code)
 where occupation_code = '${params.occupation_code}'
     and area.areatype_code = 'M'
-    and industry_code = '000000'
     and (area_name not ilike '%AK' and area_name not ilike '%HI' and area_name not ilike '%PR')
 order by datatype_name, value desc
 ```

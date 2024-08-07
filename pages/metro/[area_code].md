@@ -23,7 +23,6 @@ left join bls.area using (area_code)
 left join bls.occupation using (occupation_code)
 where area.area_code = '${params.area_code}'
     and series.areatype_code = 'M'
-    and industry_code = '000000'
     and datatype_code = '01'
     and display_level = 3
 order by value desc
@@ -53,7 +52,6 @@ left join bls.area using (area_code)
 left join bls.occupation using (occupation_code)
 where area.area_code = '${params.area_code}'
     and series.areatype_code = 'M'
-    and industry_code = '000000'
     and datatype_code = '04'
     and display_level = 3
 order by value desc
