@@ -2,6 +2,18 @@
 
 This app explores the Bureau of Labor Statistics (BLS) data on salaries from the [Occupational Employment and Wage Statistics (OEWS) survey](https://www.bls.gov/oes/).
 
+This project requires you to create pass in an environment variable for source query substitution for example via a `.env` file:
+
+```env
+EVIDENCE_VAR__qa_filter="and occupation_code ilike '15%'"
+```
+
+or 
+
+```env
+EVIDENCE_VAR__qa_filter=" "
+```
+
 ## Using Codespaces
 
 If you are using this template in Codespaces, click the `Start Evidence` button in the bottom status bar. This will install dependencies and open a preview of your project in your browser - you should get a popup prompting you to open in browser.
