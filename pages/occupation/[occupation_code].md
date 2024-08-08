@@ -127,7 +127,7 @@ where areatype_code = 'M'
 
 
 
-<Tabs>
+<Tabs id=cbsa>
     {#each [{title: 'Annual mean wage', metric: 'Annual mean wage'}, {title: 'Employment', metric: 'Employment'}, {title: '25th percentile', metric: 'Annual 25th percentile wage'}, {title: 'Median wage', metric: 'Annual median wage'}, {title: '75th percentile', metric: 'Annual 75th percentile wage'}] as {title, metric}}
     <Tab label={title}>
         <AreaMap
